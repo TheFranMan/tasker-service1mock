@@ -1,0 +1,8 @@
+services:
+  service1mock:
+    build: .
+    container_name: service1mock
+    env_file:
+      - ./.env
+    ports:
+      - 3001:3001
