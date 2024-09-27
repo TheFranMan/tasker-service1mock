@@ -21,6 +21,7 @@ func New() *Server {
 	})
 
 	r.HandleFunc("/user/{id}", handler.UserGet).Methods(http.MethodGet)
+	r.HandleFunc("/user/{id}", handler.UserUpdate).Methods(http.MethodPost)
 	r.HandleFunc("/user", handler.UserDelete).Methods(http.MethodDelete)
 
 	return &Server{
