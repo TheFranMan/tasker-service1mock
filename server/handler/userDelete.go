@@ -8,5 +8,5 @@ import (
 func UserDelete(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("In Service 1 UserDelete")
 
-	w.WriteHeader(http.StatusInternalServerError)
+	w.WriteHeader(http.StatusOK)
 }
