@@ -1,3 +1,5 @@
+name: "tasker"
+
 services:
   service1mock:
     build: .
